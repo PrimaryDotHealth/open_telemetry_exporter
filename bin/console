@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "bundler/setup"
+require "metrics_logger_gem"
+
+# You can add fixtures and/or initialization code here to make
+# interactive experiments easier. You can also use a different console,
+# if you like.
+
+# (If you use this, don't forget to add pry to your Gemfile!)
+# require "pry"
+# Pry.start
+
+require "irb"
+IRB.start(__FILE__)
+
+# Example usage:
+#   irb> OpenTelemetryExporter::Logger.increment("test.metric")
+#   irb> OpenTelemetryExporter::Logger.timing("test.timing", 100.5)
+#   irb> OpenTelemetryExporter::Logger.histogram("test.histogram", 42) 
